@@ -1,0 +1,29 @@
+﻿@page
+@model azureproje.Pages.database.IndexModel
+@{
+}
+
+<br>
+<h2>Internet Speed Of Countries 2022</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Country Name</th>
+            <th>Broadband</th>
+            <th>Mobile</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.countries)
+        {
+            <tr>
+                <td>@item.countryName</td>
+                <td>@item.band</td>
+                <td>@item.mobile</td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
